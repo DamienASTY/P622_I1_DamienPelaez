@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:P622_I1_DamienPelaez"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" FontSize="22" Foreground="#102540">
+        Title="Le jeu des 5000" Height="450" Width="800" FontSize="22" Foreground="#102540">
     <Grid Background="#F2AB27">
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -23,18 +23,18 @@
                     <ComboBoxItem>Nom du joueur</ComboBoxItem>
                 </ComboBox>
                 <TextBlock Height="40" Text="Pseudo"/>
-                <Button  Foreground="#D95829" Background="#F2E963" Width="342">Ajouter</Button>
+                <Button x:Name="b1"  Foreground="#D95829" Background="#F2E963" Width="342">Ajouter</Button>
             </StackPanel>
         </GroupBox>
         <GroupBox Grid.Column="0" Margin="3,2,23,10" Grid.Row="1">
             <StackPanel Height="65" Margin="0,0,-2,0">
-                <Button Foreground="#D95829" Background="#F2E963" Width="250"  VerticalAlignment="Center">Démarrer le jeu</Button>
-                <Button Foreground="#D95829" Background="#F2E963" Content="Démarrer le jeu" Width="250"  VerticalAlignment="Center"/>
+                <Button x:Name="b2" Foreground="#D95829" Background="#F2E963" Width="250"  VerticalAlignment="Center">Démarrer le jeu</Button>
+                <Button x:Name="b3" Foreground="#D95829" Background="#F2E963" Content="Démarrer le jeu" Width="250"  VerticalAlignment="Center"/>
             </StackPanel>
         </GroupBox>
         <StackPanel Margin="5" Grid.Row="0" Grid.Column="1">
             <TextBlock Height="35">C'est au tour de...</TextBlock>
-            <Button Foreground="#D95829" Background="#F2E963" Width="310" Content="LANCER LES DES"/>
+            <Button x:Name="b4" Foreground="#D95829" Background="#F2E963" Width="310" Content="LANCER LES DES"/>
         </StackPanel>
         <GroupBox Header="Résultat" Grid.Row="0" Grid.Column="1" Height="162" VerticalAlignment="Top" Margin="0,84,10,0">
             <StackPanel>
@@ -47,7 +47,7 @@
             <TextBlock>'Pseudo' Tu peu relancer 3 dés!:.</TextBlock>
             <CheckBox/>
             <TextBlock Width="366"><Run Text="Relancer"/></TextBlock>
-            <Button Foreground="#D95829" Background="#F2E963" Width="365" Content="JOEUR SUIVANT"/>
+            <Button x:Name="b6" Foreground="#D95829" Background="#F2E963" Width="365" Content="JOEUR SUIVANT"/>
         </StackPanel>
     </Grid>
 </Window>
